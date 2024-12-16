@@ -1,0 +1,255 @@
+.footer {
+  background-color: #454545;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 20px;
+  width: 100%;
+  min-height: 20vh;
+  position: relative;
+  margin-top: 50px;
+  
+
+  .content {
+    display: flex;
+    gap: 66px;
+    margin-bottom: 72px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    @media (max-width: 1350px) {
+      gap: 30px;
+    }
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+    }
+  }
+
+  .left {
+    border: 1px solid #696969;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    width: 555px;
+    height: 326px;
+    gap: 32px;
+    padding: 20px;
+
+    @media (max-width: 1350px) {
+      width: 480px;
+      height: auto;
+    }
+
+    @media (max-width: 768px) {
+      width: 100%;
+      max-width: 500px;
+      height: auto;
+      gap: 20px;
+    }
+
+    .helpTitle {
+      font-size: 36px;
+      text-align: center;
+
+      @media (max-width: 768px) {
+        font-size: 28px;
+      }
+    }
+
+    .formInput {
+      width: 100%;
+      max-width: 500px;
+      height: 40px;
+      border-radius: 5px;
+      padding: 0 20px;
+      color: #000;
+      font-size: 16px;
+      border: none;
+      margin: 0 auto;
+      transition: all 0.3s ease-out;
+
+      &::placeholder {
+        color: #000;
+      }
+
+      &:hover,
+      &:focus {
+        outline: #620190 2px solid;
+        transition: all 0.3s ease-out;
+      }
+
+      @media (max-width: 768px) {
+        max-width: 100%;
+      }
+    }
+
+    .sendButton {
+      width: 200px;
+      height: 50px;
+      border-radius: 10px;
+      border: none;
+      background-color: #620190;
+      color: white;
+      font-size: 18px;
+      cursor: pointer;
+      align-self: center;
+      transition: all 0.3s ease-out;
+
+      &:hover,
+      &:focus {
+        background-color: #4d0170;
+        outline: none;
+        transition: all 0.3s ease-out;
+      }
+
+      @media (max-width: 768px) {
+        width: 100%;
+        max-width: 300px;
+        height: 45px;
+        font-size: 16px;
+      }
+    }
+  }
+
+  .right {
+    display: grid;
+    grid-template-areas:
+      'A A A A A A'
+      'C C B B B B'
+      'C C B B B B';
+    gap: 55px;
+
+    @media (max-width: 1350px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 35px;
+    }
+
+    .aboutUs {
+      grid-area: A;
+      width: 550px;
+      height: 143px;
+      padding-left: 60px;
+
+      @media (max-width: 1350px) {
+        width: 480px;
+        padding-left: 40px;
+      }
+
+      @media (max-width: 768px) {
+        width: 100%;
+        padding-left: 0;
+        text-align: center;
+      }
+    }
+
+    .contacts {
+      grid-area: B;
+      display: flex;
+      gap: 25px;
+      flex-direction: column;
+
+      @media (max-width: 1350px) {
+        margin: 0px 0px 30px 50px;
+      }
+
+      @media (max-width: 768px) {
+        align-items: center;
+        gap: 15px;
+      }
+    }
+
+    .socials {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      grid-area: C;
+      margin: 0 120px 43px 0;
+
+      .links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        margin-top: 15px;
+
+        img {
+          width: 40px;
+          height: 40px;
+          transition: transform 0.3s;
+
+          &:hover {
+            transform: scale(1.1);
+          }
+        }
+      }
+
+      @media (max-width: 1350px) {
+        margin: 0px 0px 30px 50px;
+      }
+
+      @media (max-width: 768px) {
+        margin: 0;
+      }
+    }
+
+    .text {
+      font-weight: lighter;
+      font-size: 24px;
+      text-align: left;
+      line-height: 1.5;
+      margin: 0;
+
+      @media (max-width: 1350px) {
+        font-size: 18px;
+        text-align: center;
+        max-width: 80%;
+        margin: 0 auto;
+      }
+
+      @media (max-width: 768px) {
+        font-size: 17px;
+      }
+    }
+
+
+    .textContacts {
+      font-weight: lighter;
+      font-size: 20px;
+
+      @media (max-width: 1350px) {
+        font-size: 18px;
+        text-align: center;
+      }
+    }
+
+    .contentTitle {
+      font-size: 35px;
+      text-align: center;
+
+      @media (max-width: 768px) {
+        font-size: 28px;
+      }
+    }
+  }
+
+  .rights {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 40px;
+
+    @media (max-width: 768px) {
+      font-size: 18px;
+      margin-top: 20px;
+    }
+  }
+}

@@ -1,0 +1,91 @@
+.avatar {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.Profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+}
+
+.nick {
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+}
+
+.text {
+    font-size: 1rem;
+    color: white;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.toggleBtn {
+    border-radius: 10px;
+    width: 100%;
+    max-width: 200px;
+    height: 40px;
+    color: white;
+    background-color: #5A5A5A;
+    outline: none;
+    border: none;
+    transition: all 0.3s ease-out;
+    cursor: pointer;
+}
+
+.AtoggleBtn {
+    background-color: #8F1CC6;
+    transition: all 0.3s ease-out;
+}
+
+.toggleContainer {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.bookmarks {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 90px;
+    margin-top: 100px;
+
+    @media (max-width:1400px) {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @media (max-width:900px) {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .avatar {
+        max-width: 300px;
+    }
+
+    .nick {
+        font-size: 2rem;
+    }
+
+    .text {
+        font-size: 1.2rem;
+    }
+
+    .toggleBtn {
+        max-width: 264px;
+    }
+
+    .toggleContainer {
+        gap: 40px;
+        flex-wrap: wrap;
+    }
+}

@@ -1,0 +1,174 @@
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.discription {
+    color: white;
+    font-size: 32px;
+    max-width: 100%;
+    line-height: 1.4;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 64px;
+    width: 60%; 
+    padding-right: 20px;
+    box-sizing: border-box; 
+}
+
+.toggleBtn {
+    border-radius: 10px;
+    width: 100%;
+    max-width: 240px;
+    height: 40px;
+    color: white;
+    background-color: #5A5A5A;
+    outline: none;
+    border: none;
+    transition: all 0.3s ease-out;
+    cursor: pointer;
+    text-align: center;
+    font-size: 16px;
+    &:hover {
+        background-color: #8F1CC6;
+        transition: all 0.3s ease-out;
+    }
+}
+
+.AtoggleBtn {
+    background-color: #8F1CC6;
+    transition: all 0.3s ease-out;
+}
+
+.toggleContainer {
+    display: flex;
+    gap: 64px;
+    margin-bottom: 48px;
+}
+
+.LinksContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.Link {
+    width: 100%;
+    max-width: 70vw;
+    height: 48px;
+    background-color: #5A5A5A;
+    text-align: center;
+    font-size: 19px;
+    padding-top: 12px;
+    color: white;
+    border-radius: 10px;
+    transition: all 0.3s ease-out;
+    &:hover {
+        background-color: #8F1CC6;
+        transition: all 0.3s ease-out;
+    }
+}
+
+.filterBtn {
+    width: 240px;
+    height: 40px;
+    background-color: #5A5A5A;
+    font-size: 16px;
+    padding-top: 12px;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    padding-bottom: 32px;
+    transition: all 0.3s ease-out;
+    cursor: pointer;
+    &:hover {
+        background-color: #8F1CC6;
+        transition: all 0.3s ease-out;
+    }
+}
+
+@media (max-width: 1024px) {
+    .container {
+        padding: 15px;
+    }
+
+    .discription {
+        font-size: 28px;
+    }
+
+    .content {
+        margin-left: 32px;
+        width: 70%;
+        padding-right: 15px; 
+    }
+
+    .toggleContainer {
+        gap: 48px;
+    }
+
+    .Link {
+        max-width: 80vw;
+    }
+
+    .LinksContainer {
+        gap: 32px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    .discription {
+        font-size: 22px;
+    }
+
+    .content {
+        margin-left: 16px;
+        width: 100%;
+        padding-right: 10px;  
+    }
+
+    .toggleContainer {
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .Link {
+        width: 90%;
+    }
+
+    .LinksContainer {
+        gap: 24px;
+    }
+
+    .filterBtn {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .discription {
+        font-size: 18px;
+    }
+
+    .toggleBtn {
+        max-width: 100%;
+        font-size: 14px;
+    }
+
+    .Link {
+        font-size: 16px;
+        padding-top: 10px;
+    }
+
+    .filterBtn {
+        font-size: 14px;
+        padding-top: 10px;
+    }
+}

@@ -1,0 +1,141 @@
+.container {
+    width: 400px;
+    height: 670px;
+    background-color: #7b7b7b;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+    border: 1px solid #8f1cc6;
+    padding: 20px;
+    box-sizing: border-box;
+
+    @media (max-width: 768px) {
+        width: 300px;
+        height: 500px;
+        gap: 15px;
+    }
+
+    @media (max-width: 480px) {
+        width: 300px;
+        height: 500px;
+    }
+}
+
+.img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    box-sizing: border-box;
+
+    @media (max-width: 768px) {
+        width: 100%;
+        height: 200px;
+    }
+}
+
+.nameTitle {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 200px;
+    height: 35px;
+
+    @media (max-width: 768px) {
+        font-size: 24px;
+        width: 150px;
+    }
+
+    @media (max-width: 480px) {
+        font-size: 20px;
+        width: 130px;
+    }
+}
+
+.read {
+    width: 218px;
+    height: 60px;
+    background-color: #8f1cc6;
+    padding-top: 8px;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    border-radius: 10px; 
+    transition: all 0.3s ease-out;
+
+    &:hover {
+        background-color: #7b18a8;
+        transition: all 0.3s ease-out;
+    }
+
+    @media (max-width: 768px) {
+        width: 115px;
+        height: 40px;
+        font-size: 15px;
+    }
+
+    @media (max-width: 480px) {
+        width: 100px;
+        height: 35px;
+        font-size: 14px;
+    }
+}
+
+.description {
+    color: white;
+    width: 333px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+
+    @media (max-width: 768px) {
+        width: 100%;
+        font-size: 14px;
+        -webkit-line-clamp: 4;
+        text-align: center;
+    }
+
+    @media (max-width: 480px) {
+        font-size: 12px;
+        text-align: center;
+    }
+}
+
+.btn {
+    width: 218px;
+    height: 60px;
+    background-color: #6A1B9A;  
+    text-align: center;
+    font-size: 30px;
+    color: #FFFFFF; 
+    border-radius: 10px; 
+    transition: all 0.3s ease-out;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #8E24AA;
+        box-shadow: 0 4px 8px rgba(142, 36, 170, 0.5); 
+        transition: all 0.3s ease-out;
+    }
+
+    @media (max-width: 768px) {
+        width: 115px;
+        height: 40px;
+        font-size: 15px;
+    }
+
+    @media (max-width: 480px) {
+        width: 100px;
+        height: 35px;
+        font-size: 14px;
+    }
+}
+
+
+

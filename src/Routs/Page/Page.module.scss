@@ -1,0 +1,119 @@
+.container {
+  width: 1293px;
+  height: 1980px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  box-sizing: border-box;
+
+  @media (max-width: 768px) {
+    width: 360px;
+    height: 872px;
+  }
+
+  @media (max-width: 480px) {
+    width: 320px;
+    height: 872px;
+  }
+}
+
+.title {
+  color: white;
+}
+
+.pageContent {
+  width: 100%;
+  max-width: 1200px;
+  padding: 15px;
+  font-size: 19px;
+  color: #333;
+  line-height: 1.6;
+  overflow-y: auto;
+}
+
+.chapterTitle {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #222;
+  text-align: center;
+}
+
+.mainText {
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #444;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 30px;
+  margin: 30px 0px 30px 0px;
+}
+
+.links a {
+  font-size: 19px;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  background-color: #5A5A5A;
+
+  &:hover {
+    background-color: #8f1cc6;
+    color: white;
+  }
+}
+
+@media (max-width: 768px) {
+  .pageContent {
+    font-size: 16px;
+  }
+
+  .chapterTitle {
+    font-size: 20px;
+  }
+
+  .mainText {
+    font-size: 16px;
+  }
+
+  .links a {
+    font-size: 16px;
+    padding: 6px 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 320px;
+  }
+
+  .pageContent {
+    font-size: 14px;
+  }
+
+  .chapterTitle {
+    font-size: 19px;
+  }
+
+  .mainText {
+    font-size: 14px;
+  }
+
+  .links a {
+    font-size: 14px;
+    padding: 5px 8px;
+  }
+}
